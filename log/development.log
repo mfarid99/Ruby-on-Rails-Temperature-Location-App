@@ -134,3 +134,141 @@ puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.6) lib/puma/server.rb:472:in `process_client'
 puma (4.3.6) lib/puma/server.rb:328:in `block in run'
 puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/locations" for ::1 at 2020-11-25 21:24:46 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/moefarid/Desktop/Ruby/temperatures_api/app/controllers/locations_controller.rb:22: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/locations_controller.rb:22: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/locations_controller.rb:22: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/locations/1" for ::1 at 2020-11-25 21:24:57 -0500
+  
+ActionController::RoutingError (uninitialized constant LocationsController
+Did you mean?  ActionController):
+  
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/locations/1" for ::1 at 2020-11-25 21:26:43 -0500
+  
+SyntaxError (/Users/moefarid/Desktop/Ruby/temperatures_api/app/controllers/locations_controller.rb:22: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/locations_controller.rb:22: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/locations_controller.rb:22: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/locations/1" for ::1 at 2020-11-25 21:27:54 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/moefarid/Desktop/Ruby/temperatures_api/app/controllers/locations_controller.rb:22: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/locations_controller.rb:22: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/locations_controller.rb:22: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/locations/1" for ::1 at 2020-11-25 21:28:19 -0500
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:19:in `set_location'
+  [1m[36mTemperature Load (0.4ms)[0m  [1m[34mSELECT "temperatures".* FROM "temperatures" WHERE "temperatures"."location_id" = $1[0m  [["location_id", 1]]
+  ↳ app/controllers/locations_controller.rb:13:in `show'
+Completed 200 OK in 53ms (Views: 0.2ms | ActiveRecord: 12.7ms | Allocations: 15884)
+
+
+Started GET "/locations/2" for ::1 at 2020-11-25 21:28:39 -0500
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:19:in `set_location'
+  [1m[36mTemperature Load (1.1ms)[0m  [1m[34mSELECT "temperatures".* FROM "temperatures" WHERE "temperatures"."location_id" = $1[0m  [["location_id", 2]]
+  ↳ app/controllers/locations_controller.rb:13:in `show'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.4ms | Allocations: 1695)
+
+
+Started GET "/locations/" for ::1 at 2020-11-25 21:28:44 -0500
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" LIMIT $1[0m  [["LIMIT", 11]]
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms | Allocations: 31688)
+
+
+  [1m[36mCACHE Location Load (0.0ms)[0m  [1m[34mSELECT "locations".* FROM "locations" LIMIT $1[0m  [["LIMIT", 11]]
+  
+NoMethodError (undefined method `include' for #<LocationsController:0x00007ffdd142e768>):
+  
+app/controllers/locations_controller.rb:8:in `index'
+Started GET "/locations/1" for ::1 at 2020-11-25 21:28:48 -0500
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:19:in `set_location'
+  [1m[36mTemperature Load (0.4ms)[0m  [1m[34mSELECT "temperatures".* FROM "temperatures" WHERE "temperatures"."location_id" = $1[0m  [["location_id", 1]]
+  ↳ app/controllers/locations_controller.rb:13:in `show'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 2989)
+
+
+Started GET "/locations/2" for ::1 at 2020-11-25 21:29:02 -0500
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:19:in `set_location'
+  [1m[36mTemperature Load (0.3ms)[0m  [1m[34mSELECT "temperatures".* FROM "temperatures" WHERE "temperatures"."location_id" = $1[0m  [["location_id", 2]]
+  ↳ app/controllers/locations_controller.rb:13:in `show'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 1677)
+
+
+Started GET "/locations/3" for ::1 at 2020-11-25 21:29:05 -0500
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mLocation Load (2.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:19:in `set_location'
+Completed 404 Not Found in 6ms (ActiveRecord: 2.1ms | Allocations: 625)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Location with 'id'=3):
+  
+app/controllers/locations_controller.rb:19:in `set_location'
+Started GET "/locations/2" for ::1 at 2020-11-25 21:29:08 -0500
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:19:in `set_location'
+  [1m[36mTemperature Load (0.3ms)[0m  [1m[34mSELECT "temperatures".* FROM "temperatures" WHERE "temperatures"."location_id" = $1[0m  [["location_id", 2]]
+  ↳ app/controllers/locations_controller.rb:13:in `show'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 1676)
+
+
